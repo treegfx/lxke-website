@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Minecraft-Regular";
+  src: url("https://anima-uploads.s3.amazonaws.com/5c5ab4264870f00009334835/minecraftfont.ttf") format("truetype");
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #454545;
+    width: 331px;
+    height: 437px;
+    flex-direction: column;
+    box-shadow: 0px 0px 50px #454545;
+}
+  .desktop .lukebg {
+    position: absolute;
+    width: 296px;
+    height: 296px;
+    margin-top: -100px;
+    z-index: 1;
+  }
+  
+  .desktop .lukepfp {
+    width: 256px;
+    height: 256px;
+    z-index: 3;
+  }
+  
+  .desktop .text-wrapper {
+    width: 256px;
+    height: 54px;
+    font-family: "Minecraft-Regular", Helvetica;
+    width: 35%;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 43px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .desktop .spotify-logo-without {
+    width: 38px;
+    height: 38px;
+  }
+  
+  .desktop .dc {
+    width: 46px;
+    height: 46px;
+  }
+  
+  .desktop .twitch-logo {
+    width: 36px;
+    height: 38px;
+  }
+  
+  .desktop .instagram-logo-icon {
+    width: 40px;
+    height: 38px;
+  }
+  .desktop .socials {
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .desktop .socials .twitch-logo {
+    margin: 0 10px 0 0;
+  }
+  .desktop .socials .dc {
+    margin: 0 10px 0 0;
+  }
+  .desktop .socials .spotify-logo-without {
+    margin: 0 10px 0 0;
+  }
