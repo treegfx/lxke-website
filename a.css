@@ -26,11 +26,14 @@ body {
 }
 .mute:hover {
   color: black;
+  cursor: url('hover.png'), auto;
 }
 .desktop {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
+    border: 2px solid rgba(83, 83, 83, 0.6);
     background: rgba(32, 32, 32, 0.5);
     backdrop-filter: blur(5px);
     width: 331px;
@@ -72,34 +75,42 @@ body {
   .desktop .spotify-logo-without {
     width: 38px;
     height: 38px;
+    cursor: url('hover.png'), auto;
   }
   
   .desktop .dc {
     width: 46px;
     height: 46px;
+    cursor: url('hover.png'), auto;
   }
   
   .desktop .twitch-logo {
     width: 36px;
     height: 38px;
+    cursor: url('hover.png'), auto;
   }
   
   .desktop .instagram-logo-icon {
     width: 40px;
     height: 38px;
+    cursor: url('hover.png'), auto;
   }
   .desktop .socials {
     justify-content: space-between;
     margin-top: 10px;
+    cursor: url('hover.png'), auto;
   }
   .desktop .socials .twitch-logo {
     margin: 0 10px 0 0;
+    cursor: url('hover.png'), auto;
   }
   .desktop .socials .dc {
     margin: 0 10px 0 0;
+    cursor: url('hover.png'), auto;
   }
   .desktop .socials .spotify-logo-without {
     margin: 0 10px 0 0;
+    cursor: url('hover.png'), auto;
   }
 
 /* Overlay styles */
