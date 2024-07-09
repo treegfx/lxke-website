@@ -1,6 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
     const texto = ["l", "lx", "lxk", "lxke"];
-    title(texto)
+    var audio = document.getElementById("audio");
+    const button = document.getElementById('mute');
+    document.getElementById('overlay').addEventListener('click', function() {
+        this.style.display = 'none';
+        title(texto)
+        audio.play().catch(error => {
+            console.log("Autoplay prevented: ", error);
+        });
+    });
 });
 function title(text, i = 0) {
     document.title = text[i];

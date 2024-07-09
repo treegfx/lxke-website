@@ -5,13 +5,16 @@
     <link rel="stylesheet" href="a.css" />
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="a.js"></script>
-    <title>lxkey</title>
+    <title>real</title>
     <link rel="icon" type="image/png" href="lukepfp.png" />
   </head>
   <body>
-    <audio autoplay loop> 
-        <source src="allin.mp3">
-    </audio>
+    <!-- Tap to enter overlay -->
+    <div class="overlay" id="overlay">
+      <div class="overlay-message">Tap to enter</div>
+    </div>
+
+    <audio id="audio" src="allin.mp3" loop></audio>
     <div class="desktop">
         <div class="div"></div>
         <img class="lukebg" src="https://c.animaapp.com/5H8lOlJO/img/lukepfp-2@2x.png" />
@@ -23,8 +26,26 @@
             <a href="https://twitch.tv/xlvkeyy/schedule"><img class="twitch-logo" src="twitch.png"/></a>
             <a href="https://instagram.com/xx_00_xx_xx_00/"><img class="instagram-logo-icon" src="instagram.png"/></a>
         </div>
+        <button class="mute" id="mute">mute audio</button>
     </div>
+    <div class="audio">
+  </div>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="a.js"></script>
+    <script>
+      var audio = document.getElementById("audio");
+      const button = document.getElementById('mute');
+      button.addEventListener('click', function() {
+        // Toggle the muted property of the audio element
+        audio.muted = !audio.muted;
+
+        // Update the button text based on the muted state
+        if (audio.muted) {
+            button.textContent = 'unmute audio';
+        } else {
+            button.textContent = 'muta audio';
+        }
+      });
+    </script>
   </body>
 </html>
