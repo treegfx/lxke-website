@@ -3,13 +3,26 @@ document.addEventListener("DOMContentLoaded", function() {
     var audio = document.getElementById("audio");
     const button = document.getElementById('mute');
     document.getElementById('overlay').addEventListener('click', function() {
-        this.style.display = 'none';
-        title(texto)
+        fade(this);
+        title(texto);
         audio.play().catch(error => {
             console.log("Autoplay prevented: ", error);
         });
     });
 });
+function fade(element) {
+    var op = 1;  // initial opacity
+    var timer = setInterval(function () {
+        if (op <= 0.1){
+            clearInterval(timer);
+            element.style.display = 'none';
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.1;
+    }, 40);
+    
+}
 function title(text, i = 0) {
     document.title = text[i];
     if (i === text.length - 1) {
