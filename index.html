@@ -36,14 +36,12 @@
       var audio = document.getElementById("audio");
       const button = document.getElementById('mute');
       button.addEventListener('click', function() {
-        // Toggle the muted property of the audio element
         audio.muted = !audio.muted;
 
-        // Update the button text based on the muted state
         if (audio.muted) {
             button.textContent = 'unmute audio';
         } else {
-            button.textContent = 'muta audio';
+            button.textContent = 'mute audio';
         }
       });
     </script>

@@ -134,3 +134,8 @@ body {
   font-size: 45px;
   text-align: center;
 }
+
+html {
+  overflow: hidden;
+  background-color: black;
+}

@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 function fade(element) {
-    var op = 1;  // initial opacity
+    var op = 1; 
     var timer = setInterval(function () {
         if (op <= 0.1){
             clearInterval(timer);
